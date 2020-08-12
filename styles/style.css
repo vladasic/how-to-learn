@@ -1,3 +1,7 @@
+div {
+  border: 1px solid red;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -15,14 +19,106 @@
   max-height: 756px;
   background-color: #f2f2f2;
   
+  
   /* выше установили ограничения для секции */
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+/* Тут я настраиваю лого*/
+.logo{
+  background-image: url(../images/logo_place_header.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+/* тут я настроил позиционирование и отсутпы */
+.header__logo{
+  display: inline-block;
+  height: 32px;
+  width: 183px;
+  position: absolute;
+  top: 30px;
+  left: 64px; 
+  z-index: 1;
+
+}
+
+/* настраиваю отображение элемента (текс h1) */
+.header__flex-title {
+height: 100vh;
+margin-left: 64px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+/* тут я указал размер шрифта (текс h1)*/
+.header__title {
+  
+ line-height: 96px;
+ font-size: 102px;
+ font-weight: 700;
+ 
+}
+
+/* я прописываю правила для субтайтла (h2) отступы, позицию  */
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 1;
+}
+/* правило конкретно для текста (h2) высоту, ширину, длину*/
+.subtitle {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* Убрал подчёркивание ссылки*/
+.header__link {
+  text-decoration: none;
+}
+
+
+
+/* установил размеры для изображения*/
+.main-image {
+display: inline-block;
+height: 608px;
+width: 765px;
+}
+
+/* для изображения определил позицию и место */
+.header__main-illustration {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1;
+}
+
+
+/* Размеры квадрата, определенны до меня*/
 .header__square-pic {
+
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  z-index: 0;
+
+
+ 
 }
+ 
+/*положения квадрата */
+.square-pic {
+  position: absolute;
+  top: 64px;
+  right: 0px;
+  z-index: 0;
+}
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -31,3 +127,4 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
