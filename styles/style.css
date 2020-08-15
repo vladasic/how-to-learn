@@ -1,6 +1,8 @@
-div {
-  border: 1px solid red;
+* {
+  margin: 0;
+  bottom: 0;
 }
+
 
 .page {
   min-width: 1100px;
@@ -79,6 +81,7 @@ justify-content: center;
 /* Убрал подчёркивание ссылки*/
 .header__link {
   text-decoration: none;
+  color:#2f80ed;
 }
 
 
@@ -88,6 +91,7 @@ justify-content: center;
 display: inline-block;
 height: 608px;
 width: 765px;
+
 }
 
 /* для изображения определил позицию и место */
@@ -96,6 +100,7 @@ width: 765px;
   bottom: 0px;
   right: 0px;
   z-index: 1;
+  
 }
 
 
@@ -119,12 +124,353 @@ width: 765px;
   z-index: 0;
 }
 
+/* отсутп от шапки*/
+.description__margin {
+margin-top: 100px;
+}
 
-/* и элемента с модификатором вида ключ-значение */
+/*  преобразовал в флекс, отцентрировал*/
+.description{
+  display:flex;
+  
+  justify-content:center;
+
+}
+/* указал общую ширину для всего блока*/
+.two-columns{
+  width:80%;
+  display:flex;
+  justify-content:space-between;
+}
+ /* указал размер и дисплей только для бриффа*/
+.two-columns__brief {
+  width:175px;
+  display: flex;
+  flex-direction:center;
+  
+  
+  
+}
+
+/*размеры текста "главные проблемы обучения*/
+.two-columns__brief-text{
+
+  line-height: 1,2px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width:784px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+
+/* размеры шрифта для h2 */
+.paragraph{
+  line-height: 34x;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent{
+  line-height: 34x;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/*отступ новоого блока*/
+.digits {
+margin-top: 100px;
+
+}
+/*размер для сексции с титульником/субтитулником */
+.section-width{
+  width: 60%;
+  margin: 0 auto;
+  
+  
+}
+/*значения для h2 титульника*/
+.section-title-digits{
+line-height: 1,15;
+font-size: 60px;
+font-weight: 700;
+text-align: center;
+}
+
+/*отсуп 20 пикселей*/
+.table_margin{
+  margin-bottom: 20px;
+}
+/* значения для субтитульника h3*/
+.section-subtitle-digits{ 
+line-height: 34px;
+font-size: 24px;
+font-weight: normal;
+text-align: center;
+
+}
+/* размер для новой ячейки*/
+.table {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-self:center;
+}
+/*оступ внутри ячейки*/
+.table__padding {
+  padding-top: 60px;
+  display: flex;
+  
+}
+
+.table__cell{
+  width: 250px;
+  
+}
+
+/*текс для заголовков в таблице*/
+.table__heading{
+  line-height:1.15;
+  font-size: 24px;
+  font-weight: 700;
+}
+/* текст основной в таблице*/
+.table__text{
+line-height: 1.2;
+font-size: 18px;
+font-weight: normal;
+}
+
+
+.table-two{
+  display: flex;
+}
+
+/*класс отсупа 100px*/
+.digits-end{
+  margin-bottom: 100px;
+}
+
+.feinman{
+  height: 790px;
+  background-color: #f2f2f2;
+  position: relative;
+  z-index: 1;
+
+}
+
+.feinman__title{
+  margin: 100px auto 0px;
+  width: 648px;
+}
+
+
+.feinman__title-text{
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.feinman__subtitle {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
+.feinman__subtitle-text{
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.feynman__link{
+  position: absolute;
+  top: 50%;
+  right: 48px;
+
+}
+
+.feynman__link-text{
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+}
+/*цвет и нижнее подчёркивание*/
+.feynman__link-color{
+  text-decoration: none;
+  color: black;
+}
+
+
+.feynman__image-position{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+  
+
+.kaufman{
+  padding-top:90px;
+  background-color: #1f1f1f ;
+  padding-bottom:90px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title__theme_dark {
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  color: white; 
+}
+
+.section-subtitle__theme_dark{
+  line-height: 34px;
+  font-size: 25px;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+}
+
+
+.table__theme_dark {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-self:center;
+  color: white;
+ 
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.table__heading_theme_dark{
+  line-height: 1,15;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.table__text_theme_dark{
+  line-height:1,2;
+  font-size:18px;
+  font-weight:normal;
+}
+
+.kaufman__triangle{
+  width:877px;
+  height:877px;
+  position: absolute;
+  background-image: url(../images/kaufman-triangle.svg);
+  right: -210px;
+  top: 0px;
+  z-index: -1;
+  
+}
+
+.footer{
+  padding-top: 60px;
+  margin-bottom: 40;
+  min-height: 350px;
+  background-color: #1f1f1f;
+  display: flex;
+  flex-basis: 711px;
+  color: white;
+}
+
+.footer__columns{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  position: relative;
+}
+
+.footer__column-copyright {
+  height: 100%;
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.table__heading_footer{
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.table__text_footer{
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  display: inline;
+}
+
+.footer__column-copyright_50{
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.logog__place_footer{
+display: inline-block;
+height: 35px;
+width: 183px;
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+}
+
+.footer__author {
+position: relative;
+display: inline-block;
+margin: 18px 0;
+}
+
+.footer__author_text{
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  
+
+}
+
+.table__link_white{
+  text-decoration: none;
+  color: white;
+}
+
+
+.footer__social-icon{
+  margin: 0 10px 0 0;
+  display: inline;
+}
+
+.table_margin_botom{
+ margin-top: 16px;
 }
 
