@@ -3,6 +3,13 @@
   bottom: 0;
 }
 
+a:hover{
+  color: red;
+}
+
+div{
+  border:1px solid red;
+}
 
 .page {
   min-width: 1100px;
@@ -48,6 +55,7 @@
 /* настраиваю отображение элемента (текс h1) */
 .header__flex-title {
 height: 100vh;
+width: 730px;
 margin-left: 64px;
 display: flex;
 flex-direction: column;
@@ -146,16 +154,13 @@ margin-top: 100px;
 .two-columns__brief {
   width:175px;
   display: flex;
-  flex-direction:center;
-  
-  
-  
+ 
 }
 
 /*размеры текста "главные проблемы обучения*/
 .two-columns__brief-text{
 
-  line-height: 1,2px;
+  line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
@@ -173,13 +178,13 @@ margin-top: 100px;
 
 /* размеры шрифта для h2 */
 .paragraph{
-  line-height: 34x;
+  line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
 .two-columns__span-accent{
-  line-height: 34x;
+  line-height: 34px;
   font-size: 24px;
   font-weight: 700;
 }
@@ -198,7 +203,7 @@ margin-top: 100px;
 }
 /*значения для h2 титульника*/
 .section-title-digits{
-line-height: 1,15;
+line-height: 1.15;
 font-size: 60px;
 font-weight: 700;
 text-align: center;
@@ -370,13 +375,13 @@ font-weight: normal;
 }
 
 .table__heading_theme_dark{
-  line-height: 1,15;
+  line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
 }
 
 .table__text_theme_dark{
-  line-height:1,2;
+  line-height:1.2;
   font-size:18px;
   font-weight:normal;
 }
@@ -394,7 +399,7 @@ font-weight: normal;
 
 .footer{
   padding-top: 60px;
-  margin-bottom: 40;
+
   min-height: 350px;
   background-color: #1f1f1f;
   display: flex;
@@ -415,13 +420,13 @@ font-weight: normal;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-
+/* Значения для загаловка(h3) текста в футере*/
 .table__heading_footer{
   line-height: 30px;
   font-size: 18px;
   font-weight: 700;
 }
-
+/*значения для текста(h4) в футере*/
 .table__text_footer{
   line-height: 30px;
   font-size: 18px;
@@ -429,13 +434,14 @@ font-weight: normal;
   display: inline;
 }
 
+/* значения для втсавки копирайта, определяю как флекс.*/
 .footer__column-copyright_50{
 width: 50%;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 }
-
+/* значения для лого в футере, в отличии от родителя, определён свой флекс */
 .logog__place_footer{
 display: inline-block;
 height: 35px;
@@ -445,12 +451,13 @@ flex-direction: row;
 justify-content:space-between;
 }
 
+/* значения для автора(копирайта) инлайн-блок+отсутпы сверху и снизу*/
 .footer__author {
 position: relative;
 display: inline-block;
 margin: 18px 0;
 }
-
+/* размер шрифта дял автора(копирайта) */
 .footer__author_text{
   line-height: 25px;
   font-size: 18px;
@@ -458,19 +465,21 @@ margin: 18px 0;
   
 
 }
-
+/*значение для ссылки, цвет,декорация*/
 .table__link_white{
   text-decoration: none;
   color: white;
+  display: block;
 }
 
-
+/*отсупт для img и определение их дисплея*/
 .footer__social-icon{
   margin: 0 10px 0 0;
   display: inline;
 }
 
-.table_margin_botom{
- margin-top: 16px;
+/*свойство исключительно для отсутпа, можно убрать в HTML отдельный DIV, и перенозначить как свойства для блока*/
+.table__padding_botom{
+ padding-bottom: 16px;
 }
 
