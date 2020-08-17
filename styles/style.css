@@ -3,12 +3,12 @@
   bottom: 0;
 }
 
+ h1 {
+   margin:0;
+   
+ }
 a:hover{
   color: red;
-}
-
-div{
-  border:1px solid red;
 }
 
 .page {
@@ -27,13 +27,15 @@ div{
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  position: relative;
+
   
   
   /* выше установили ограничения для секции */
 }
 
 /* Тут я настраиваю лого*/
-.logo{
+.logo__plaece_header{
   background-image: url(../images/logo_place_header.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -54,30 +56,32 @@ div{
 
 /* настраиваю отображение элемента (текс h1) */
 .header__flex-title {
-height: 100vh;
+height: 100%;
 width: 730px;
 margin-left: 64px;
 display: flex;
 flex-direction: column;
 justify-content: center;
 
+
 }
 /* тут я указал размер шрифта (текс h1)*/
 .header__title {
-  
+
  line-height: 96px;
  font-size: 102px;
  font-weight: 700;
- 
+ z-index: 2;
 }
 
 /* я прописываю правила для субтайтла (h2) отступы, позицию  */
 .header__subtitle {
   width: 388px;
+  display: inline-block;
   position: absolute;
   bottom: 30px;
   left: 64px;
-  z-index: 1;
+  z-index: 2;
 }
 /* правило конкретно для текста (h2) высоту, ширину, длину*/
 .subtitle {
@@ -109,38 +113,27 @@ width: 765px;
   right: 0px;
   z-index: 1;
   
+  
 }
 
 
 /* Размеры квадрата, определенны до меня*/
 .header__square-pic {
-
+  position: absolute;
+  top: 64px;
+  right: 0px;
+  z-index: 0;
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
   z-index: 0;
 
-
- 
 }
  
-/*положения квадрата */
-.square-pic {
-  position: absolute;
-  top: 64px;
-  right: 0px;
-  z-index: 0;
-}
-
-/* отсутп от шапки*/
-.description__margin {
-margin-top: 100px;
-}
-
 /*  преобразовал в флекс, отцентрировал*/
 .description{
+  margin-top: 100px;
   display:flex;
-  
   justify-content:center;
 
 }
@@ -181,6 +174,11 @@ margin-top: 100px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.paragraph__no_margin {
+  margin-bottom: 0;
 }
 
 .two-columns__span-accent{
@@ -202,7 +200,7 @@ margin-top: 100px;
   
 }
 /*значения для h2 титульника*/
-.section-title-digits{
+.section-title{
 line-height: 1.15;
 font-size: 60px;
 font-weight: 700;
@@ -214,7 +212,7 @@ text-align: center;
   margin-bottom: 20px;
 }
 /* значения для субтитульника h3*/
-.section-subtitle-digits{ 
+.section-subtitle{ 
 line-height: 34px;
 font-size: 24px;
 font-weight: normal;
@@ -223,6 +221,7 @@ text-align: center;
 }
 /* размер для новой ячейки*/
 .table {
+  
   width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -230,11 +229,13 @@ text-align: center;
   justify-content: space-between;
   flex-wrap: wrap;
   align-self:center;
+  padding-top: 60px;
+ 
 }
 /*оступ внутри ячейки*/
 .table__padding {
-  padding-top: 60px;
-  display: flex;
+  padding-top: 80px;
+  
   
 }
 
@@ -266,35 +267,36 @@ font-weight: normal;
   margin-bottom: 100px;
 }
 
-.feinman{
-  height: 790px;
+.feynman{
+  padding-top: 100px;
+  min-height: 790px;
   background-color: #f2f2f2;
   position: relative;
   z-index: 1;
 
 }
 
-.feinman__title{
-  margin: 100px auto 0px;
+.feynman__title{
+  margin: 0px auto 0px;
   width: 648px;
 }
 
 
-.feinman__title-text{
+.feynman__title-text{
   line-height: 1.15;
   font-size: 120px;
   font-weight: 700;
   text-align: center;
 }
 
-.feinman__subtitle {
+.feynman__subtitle {
   margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0px;
 }
 
-.feinman__subtitle-text{
+.feynman__subtitle-text{
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -338,7 +340,8 @@ font-weight: normal;
   z-index: 1;
 }
 
-.section-title__theme_dark {
+
+.kaufman__section_title {
   line-height: 69px;
   font-size: 60px;
   font-weight: 700;
@@ -346,7 +349,8 @@ font-weight: normal;
   color: white; 
 }
 
-.section-subtitle__theme_dark{
+
+.kaufman__subtitle{
   line-height: 34px;
   font-size: 25px;
   font-weight: normal;
@@ -355,7 +359,7 @@ font-weight: normal;
 }
 
 
-.table__theme_dark {
+.kaufman__table {
   width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -367,20 +371,31 @@ font-weight: normal;
  
 }
 
-.table__cell_theme_dark {
+
+.kaufman__cell {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
 }
 
-.table__heading_theme_dark{
+.kaufman__table_heading{
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
 }
 
-.table__text_theme_dark{
+.kaufman__table_margin{
+  margin-bottom: 20px;
+}
+
+.kaufman__section-width{
+  width: 60%;
+  margin: 0 auto;
+
+}
+
+.kaufman__table_text{
   line-height:1.2;
   font-size:18px;
   font-weight:normal;
@@ -391,6 +406,7 @@ font-weight: normal;
   height:877px;
   position: absolute;
   background-image: url(../images/kaufman-triangle.svg);
+  background-size: auto ;
   right: -210px;
   top: 0px;
   z-index: -1;
@@ -399,11 +415,12 @@ font-weight: normal;
 
 .footer{
   padding-top: 60px;
-
+  padding-bottom: 40px;
   min-height: 350px;
   background-color: #1f1f1f;
   display: flex;
-  flex-basis: 711px;
+
+  
   color: white;
 }
 
@@ -412,22 +429,29 @@ font-weight: normal;
   margin-right: auto;
   width: 90%;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
 }
 
 .footer__column-copyright {
   height: 100%;
-  display:flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  width: 50%;
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
 }
 /* Значения для загаловка(h3) текста в футере*/
-.table__heading_footer{
+
+.footer__column-heading{
   line-height: 30px;
   font-size: 18px;
   font-weight: 700;
 }
 /*значения для текста(h4) в футере*/
-.table__text_footer{
+
+.footer__column-links{
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -435,15 +459,15 @@ font-weight: normal;
 }
 
 /* значения для втсавки копирайта, определяю как флекс.*/
-.footer__column-copyright_50{
-width: 50%;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+
+.logo__footer{
+  background-image: url(../images/logo_place_footer.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /* значения для лого в футере, в отличии от родителя, определён свой флекс */
-.logog__place_footer{
-display: inline-block;
+
+.logo__place_footer{
 height: 35px;
 width: 183px;
 display: flex;
@@ -452,34 +476,46 @@ justify-content:space-between;
 }
 
 /* значения для автора(копирайта) инлайн-блок+отсутпы сверху и снизу*/
+
 .footer__author {
 position: relative;
-display: inline-block;
+display:flex;
 margin: 18px 0;
 }
 /* размер шрифта дял автора(копирайта) */
+
 .footer__author_text{
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  
+}
 
+.footer__colunm_content_info{
+  display: inline-block;
 }
 /*значение для ссылки, цвет,декорация*/
-.table__link_white{
+
+.footer__link_white{
   text-decoration: none;
   color: white;
   display: block;
 }
+.footer_margin{
+  margin-bottom: 20px;
+}
 
 /*отсупт для img и определение их дисплея*/
+.footer__column_content_social{
+  display: inline-block;
+}
+
 .footer__social-icon{
   margin: 0 10px 0 0;
   display: inline;
 }
 
 /*свойство исключительно для отсутпа, можно убрать в HTML отдельный DIV, и перенозначить как свойства для блока*/
-.table__padding_botom{
+.footer__padding_botom{
  padding-bottom: 16px;
 }
 
