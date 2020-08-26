@@ -20,6 +20,7 @@ a:hover{
   background-color: #f2f2f2;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 /* Тут я настраиваю лого*/
@@ -31,7 +32,7 @@ a:hover{
 }
 
 /* тут я настроил позиционирование и отсутпы */
-.logo_pleace_header{
+.logo_place_header{
   display: inline-block;
   height: 32px;
   width: 183px;
@@ -372,9 +373,7 @@ margin-bottom: 20px;
 }
 
 .footer__column {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
   height: 100%;
 }
 .footer__column_content_copyright{
@@ -414,7 +413,7 @@ font-size: 18px;
 font-weight: normal;
 }
 
-.footer__colunm_content_info{
+.footer__column_content_info{
   flex-direction: column;
 
 }
@@ -423,7 +422,7 @@ font-weight: normal;
   padding-left: 0;
   list-style-type: none;
   display: inline;
-  margin: 0;
+  margin-top: 0;
 }
 
 
