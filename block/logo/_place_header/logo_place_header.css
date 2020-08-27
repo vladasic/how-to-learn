@@ -1,0 +1,10 @@
+.logo_place_header{
+  display: inline-block;
+  height: 32px;
+  width: 183px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 2;
+
+}
