@@ -5,7 +5,6 @@
 @import url(../block/header/__title/header__title.css);
 @import url(../block/header/__subtitle/header__subtitle.css);
 @import url(../block/header/__link/header__link.css);
-@import url(../block/header/__link/__linkhover/header__linkhover.css);
 @import url(../block/header/__main-illustration/header__main-illustration.css);
 @import url(../block/header/__square-pic/header__square-pic.css);
 @import url(../block/rotation/rotation.css);
@@ -29,7 +28,6 @@
 @import url(../block/feynman/__title/feynman__title.css);
 @import url(../block/feynman/__subtitle/feynman__subtitle.css);
 @import url(../block/feynman/__link/feynman__link.css);
-@import url(../block/feynman/__link/linkhover/feynman__linkhover.css);
 @import url(../block/feynman/__image/feynman__image.css);
 @import url(../block/digits/digits.css);
 @import url(../block//section-title/section-title.css);
@@ -48,7 +46,6 @@
 @import url(../block/khan/__book-container/khan__book-container.css);
 @import url(../block/khan/__book-pic/khan__book-pic.css);
 @import url(../block/khan/__buy-link/khan__buy-link.css);
-@import url(../block/khan/__buy-link/buy-linkhover/khan__buy-linkhover.css);
 @import url(../block/kaufman/kaufman.css);
 @import url(../block/section-title/_theme/section-title_theme_dark.css);
 @import url(../block/section-subtitle/_theme/section-subtitle_theme_dark.css);
@@ -60,7 +57,6 @@
 @import url(../block/resources/resources.css);
 @import url(../block/resources/__logo-zone/resources__logo-zone.css);
 @import url(../block/resources/__logo/resources__logo.css);
-@import url(../block/resources/__logo/__logohover/resources__logohover.css);
 @import url(../block/footer/footer.css);
 @import url(../block/footer/__columns/footer__columns.css);
 @import url(../block/footer/__column/footer__column.css);
@@ -71,6 +67,5 @@
 @import url(../block/footer/__column/_content/footer__column_content_info.css);
 @import url(../block/footer/__column-links/footer__column-links.css);
 @import url(../block/footer/__column-link/footer__column-link.css);
-@import url(../block/footer/__column-link/linkhover/footer__column-linkhover.css);
 @import url(../block/footer/__column/_content/footer__column_content_social.css);
 @import url(../block/footer/__social-icon/footer__social-icon.css );
